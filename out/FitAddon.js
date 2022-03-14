@@ -13,7 +13,6 @@ var FitAddon = (function () {
     FitAddon.prototype.fit = function () {
         var _a;
         var dims = this.proposeDimensions();
-        console.log(dims);
         if (!dims || !this._terminal || isNaN(dims.cols) || isNaN(dims.rows)) {
             return;
         }
